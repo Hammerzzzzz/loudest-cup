@@ -56,12 +56,10 @@ select{background:var(--gulf-deep);border:1px solid var(--line);padding:9px 10px
 #heroName{font-size:clamp(68px,17.5vw,224px);line-height:.84;margin-top:12px;overflow-wrap:anywhere}
 #heroName a{text-decoration:none}
 #heroName a:hover{color:var(--saffron)}
-.facts{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.7fr) auto;gap:20px 28px;align-items:end;padding-block:18px 34px;border-top:1px solid var(--line)}
+.facts{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.7fr);gap:20px 28px;align-items:end;padding-block:18px 34px;border-top:1px solid var(--line)}
 .fact b{display:block;font:600 16px/1.3 var(--body);font-variant-numeric:tabular-nums;margin-top:3px}
 .why{font-size:15px;max-width:52ch;min-width:0}
 .why strong{font-weight:600;display:block}
-.cta{display:inline-flex;align-items:center;gap:12px;background:var(--saffron);color:var(--gulf-deep);padding:13px 18px;font:500 12px var(--mono);letter-spacing:.1em;text-transform:uppercase;text-decoration:none;white-space:nowrap}
-.cta:hover{background:var(--foam)}
 
 /* Chart list */
 .head{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px 24px;margin-bottom:26px}
@@ -117,7 +115,7 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 
 @media (max-width:980px){
   .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
-  .why{grid-column:1/-1}.cta{grid-column:1/-1;justify-content:center}
+  .why{grid-column:1/-1}
   .row{grid-template-columns:26px 54px minmax(0,1fr)}
   .row .ar{grid-column:3/-1;grid-row:2}.row .bar{display:none}.row .d{display:none}
   .split{grid-template-columns:minmax(0,1fr)}
@@ -149,7 +147,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
     <div class="facts">
       <div class="why" id="heroWhy"></div>
       <div class="fact"><span class="label">Movement</span><b id="fMove"></b></div>
-      <a class="cta" id="heroLink" target="_blank" rel="noopener">See the sources <span aria-hidden="true">→</span></a>
     </div>
   </div>
 </div>
@@ -210,11 +207,10 @@ function render(){
     $('heroName').innerHTML='<a href="'+esc(top.url)+'" target="_blank" rel="noopener">'+esc(top.name)+'</a>';
     $('heroWhy').innerHTML='<a class="heroMap" href="'+esc(top.maps)+'" target="_blank" rel="noopener"><strong>'+esc(D.areas.find(a=>a.id===top.area).name)+'</strong></a>';
     $('fMove').innerHTML=mv(top,k);
-    $('heroLink').href=top.sources.length?top.sources[0].url:top.url;$('heroLink').hidden=false;
   }else{
     $('heroName').textContent='Too quiet to call';
     $('heroWhy').innerHTML='<strong>'+esc(w)+'</strong>Not enough posts in this period to name a winner. Try the Overall chart.';
-    $('fMove').textContent='–';$('heroLink').hidden=true;
+    $('fMove').textContent='–';
   }
   $('chartEyebrow').textContent=w+' · '+D.tabLabels[k];
   $('chartTitle').textContent=(S.area==='all'?'The chart':'Other '+w+' cafes');
