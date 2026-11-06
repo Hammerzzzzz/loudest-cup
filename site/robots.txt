@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+Disallow: /template.html
+Disallow: /loudest-cup.html
+
+Sitemap: https://loudest-cup.onrender.com/sitemap.xml

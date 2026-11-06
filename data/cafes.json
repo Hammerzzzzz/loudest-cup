@@ -37,6 +37,10 @@
    "name": "Dubai Design District"
   },
   {
+   "id": "hills",
+   "name": "Dubai Hills & New Dubai"
+  },
+  {
    "id": "other",
    "name": "Around Dubai"
   }
@@ -210,7 +214,7 @@
   },
   {
    "name": "ONA Coffee",
-   "area": "other",
+   "area": "difc",
    "aliases": [
     "ONA Dubai"
    ],
@@ -221,7 +225,7 @@
   },
   {
    "name": "Sla Cafe",
-   "area": "other",
+   "area": "hills",
    "aliases": [
     "Sla Cafe"
    ],
@@ -232,7 +236,7 @@
   },
   {
    "name": "Blume",
-   "area": "other",
+   "area": "downtown",
    "aliases": [
     "Blume Dubai"
    ],
@@ -596,7 +600,7 @@
   },
   {
    "name": "Lazy Cat",
-   "area": "other",
+   "area": "alquoz",
    "aliases": [
     "Lazy Cat"
    ],

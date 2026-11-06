@@ -39,7 +39,7 @@ def shortcode_ts(code):
 
 
 def views(s):
-    m = re.fullmatch(r"([\d,.]+)\s*([KMB]?)", s.strip())
+    m = re.fullmatch(r"(\d[\d,]*(?:\.\d+)?)\s*([KMB]?)", s.strip())
     if not m:
         return None
     return int(float(m.group(1).replace(",", "")) * {"": 1, "K": 1e3, "M": 1e6, "B": 1e9}[m.group(2)])
@@ -69,16 +69,21 @@ with open(OUT, "a") as f:
         except Exception as e:
             print(tag, "ERR", repr(e)[:100], flush=True)
             continue
-        n = 0
+        rows = []
         for p in d["posts"]:
-            lines = p["text"].split("\n")
-            code = p["href"].rstrip("/").split("/")[-1]
-            v = views(lines[1]) if len(lines) > 1 else None
-            cap = "\n".join(lines[2:] if v is not None else lines[1:])
-            f.write(json.dumps({"tag": tag, "href": p["href"], "code": code, "handle": lines[0],
-                                "views": v, "caption": cap, "ts": shortcode_ts(code), "run": RUN},
-                               ensure_ascii=False) + "\n")
-            n += 1
+            try:
+                lines = p["text"].split("\n")
+                code = p["href"].rstrip("/").split("/")[-1]
+                v = views(lines[1]) if len(lines) > 1 else None
+                cap = "\n".join(lines[2:] if v is not None else lines[1:])
+                rows.append({"tag": tag, "href": p["href"], "code": code, "handle": lines[0], "views": v,
+                             "caption": cap, "ts": shortcode_ts(code), "run": RUN})
+            except Exception as e:
+                print(tag, "skipped a post", repr(e)[:80], flush=True)
+        # Written only once the page is finished, so a stopped run reads the whole page again.
+        for r in rows:
+            f.write(json.dumps(r, ensure_ascii=False) + "\n")
         f.flush()
+        n = len(rows)
         print(tag, n, d["url"][:60], flush=True)
         time.sleep(4)

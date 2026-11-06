@@ -41,6 +41,7 @@ select{background:var(--gulf-deep);border:1px solid var(--line);padding:9px 10px
 .cup svg{width:100%;height:100%;display:block}
 .cup .swirl{transform-origin:50% 50%;animation:turn 90s linear infinite}
 @keyframes turn{to{transform:rotate(360deg)}}
+[hidden]{display:none!important}
 .tabs{position:relative;z-index:2;display:flex;gap:6px;flex-wrap:wrap;margin-top:22px}
 .tab{background:none;border:1px solid var(--line);padding:9px 14px;font:500 11px var(--mono);letter-spacing:.12em;text-transform:uppercase;cursor:pointer;color:var(--sage)}
 .tab{background:var(--gulf-deep)}
@@ -55,7 +56,7 @@ select{background:var(--gulf-deep);border:1px solid var(--line);padding:9px 10px
 #heroName{font-size:clamp(68px,17.5vw,224px);line-height:.84;margin-top:12px;overflow-wrap:anywhere}
 #heroName a{text-decoration:none}
 #heroName a:hover{color:var(--saffron)}
-.facts{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.5fr) repeat(3,minmax(0,.7fr)) auto;gap:20px 28px;align-items:end;padding-block:18px 34px;border-top:1px solid var(--line)}
+.facts{position:relative;z-index:2;display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.7fr) auto;gap:20px 28px;align-items:end;padding-block:18px 34px;border-top:1px solid var(--line)}
 .fact b{display:block;font:600 16px/1.3 var(--body);font-variant-numeric:tabular-nums;margin-top:3px}
 .why{font-size:15px;max-width:52ch;min-width:0}
 .why strong{font-weight:600;display:block}
@@ -73,6 +74,8 @@ select{background:var(--gulf-deep);border:1px solid var(--line);padding:9px 10px
 .row .nm a{text-decoration:none}
 .row .nm a:hover{color:var(--saffron)}
 .row .ar{font-size:13px;color:var(--sage);min-width:0}
+.row .ar a{text-decoration:underline;text-underline-offset:3px;text-decoration-color:var(--line)}
+.row .ar a:hover{color:var(--saffron);text-decoration-color:var(--saffron)}
 .meter{height:5px;background:var(--gulf-lift);overflow:hidden}
 .meter span{display:block;height:100%;background:var(--saffron)}
 .num{font:400 13px var(--mono);text-align:right;font-variant-numeric:tabular-nums;white-space:nowrap}
@@ -113,7 +116,7 @@ footer{padding-block:26px;border-top:1px solid var(--line);font-size:12px;color:
 footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-between}
 
 @media (max-width:980px){
-  .facts{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .facts{grid-template-columns:repeat(2,minmax(0,1fr))}
   .why{grid-column:1/-1}.cta{grid-column:1/-1;justify-content:center}
   .row{grid-template-columns:26px 54px minmax(0,1fr)}
   .row .ar{grid-column:3/-1;grid-row:2}.row .bar{display:none}.row .d{display:none}
@@ -146,8 +149,6 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
     <div class="facts">
       <div class="why" id="heroWhy"></div>
       <div class="fact"><span class="label">Movement</span><b id="fMove"></b></div>
-      <div class="fact"><span class="label">Sources</span><b id="fGuides"></b></div>
-      <div class="fact"><span class="label">Rating</span><b id="fRating"></b></div>
       <a class="cta" id="heroLink" target="_blank" rel="noopener">See the sources <span aria-hidden="true">→</span></a>
     </div>
   </div>
@@ -188,8 +189,8 @@ footer .wrap{display:flex;flex-wrap:wrap;gap:8px 28px;justify-content:space-betw
 <script id="data" type="application/json">/*DATA*/</script>
 <script>
 const D=JSON.parse(document.getElementById('data').textContent);
-const TABS=[['d365','Overall'],['d90','Trending now'],['guidesTab','Most recommended'],['reviewsTab','Best reviewed']];
-const S={tab:'d365',area:'all'};
+const TABS=[['d90','Trending now'],['d365','Overall'],['guidesTab','Most recommended'],['reviewsTab','Best reviewed']];
+const S={tab:'d90',area:'all'};
 const $=id=>document.getElementById(id);
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 const fmt=n=>n>=1e6?(n/1e6).toFixed(n>=1e7?0:1)+'M':n>=1e3?Math.round(n/1e3)+'K':String(n);
@@ -207,13 +208,13 @@ function render(){
   if(top){
     const m=top[k];
     $('heroName').innerHTML='<a href="'+esc(top.url)+'" target="_blank" rel="noopener">'+esc(top.name)+'</a>';
-    $('heroWhy').innerHTML='<strong>'+esc(D.areas.find(a=>a.id===top.area).name)+'</strong>'+esc(why(top,m,k));
-    $('fMove').innerHTML=mv(top,k);$('fGuides').textContent=top.guides.length;$('fRating').textContent=top.reviews?top.reviews.rating+'★':'–';
+    $('heroWhy').innerHTML='<a class="heroMap" href="'+esc(top.maps)+'" target="_blank" rel="noopener"><strong>'+esc(D.areas.find(a=>a.id===top.area).name)+'</strong></a>';
+    $('fMove').innerHTML=mv(top,k);
     $('heroLink').href=top.sources.length?top.sources[0].url:top.url;$('heroLink').hidden=false;
   }else{
     $('heroName').textContent='Too quiet to call';
     $('heroWhy').innerHTML='<strong>'+esc(w)+'</strong>Not enough posts in this period to name a winner. Try the Overall chart.';
-    $('fMove').textContent=$('fGuides').textContent=$('fRating').textContent='–';$('heroLink').hidden=true;
+    $('fMove').textContent='–';$('heroLink').hidden=true;
   }
   $('chartEyebrow').textContent=w+' · '+D.tabLabels[k];
   $('chartTitle').textContent=(S.area==='all'?'The chart':'Other '+w+' cafes');
@@ -222,7 +223,7 @@ function render(){
   $('moveNote').textContent=hasMove?'▲ up  ▼ down  = same  ·  '+D.moveNote:'Movement for this chart starts at the next update';
   const rows=(S.area==='all'?L:L.slice(1)).slice(0,S.area==='all'?20:10);
   const max=rows.length?rows[0][k].score:1;
-  $('chart').innerHTML=rows.length?rows.map((c,i)=>{const m=c[k];return '<li class="row"><span class="r">'+(S.area==='all'?i+1:i+2)+'</span>'+mv(c,k)+'<span class="nm"><a href="'+esc(c.url)+'" target="_blank" rel="noopener">'+esc(c.name)+'</a></span><span class="ar">'+esc(D.areas.find(a=>a.id===c.area).name)+(c.reviews?' · '+c.reviews.rating+'★':'')+(c.guides.length?' · '+plural(c.guides.length,'source'):'')+'</span><span class="bar meter"><span style="width:'+Math.round(m.score/max*100)+'%"></span></span></li>'}).join(''):'<li class="empty">No other cafes in this area for this period.</li>';
+  $('chart').innerHTML=rows.length?rows.map((c,i)=>{const m=c[k];return '<li class="row"><span class="r">'+(S.area==='all'?i+1:i+2)+'</span>'+mv(c,k)+'<span class="nm"><a href="'+esc(c.url)+'" target="_blank" rel="noopener">'+esc(c.name)+'</a></span><span class="ar"><a href="'+esc(c.maps)+'" target="_blank" rel="noopener" aria-label="'+esc(c.name)+' on Google Maps">'+esc(D.areas.find(a=>a.id===c.area).name)+'</a></span><span class="bar meter"><span style="width:'+Math.round(m.score/max*100)+'%"></span></span></li>'}).join(''):'<li class="empty">No other cafes in this area for this period.</li>';
   const W=top?top.sources:[];
   $('writtenWrap').hidden=!W.length;
   $('writtenIntro').textContent=top?'Where '+top.name+' was named or ranked. Each one links to the original.':'';
@@ -230,7 +231,7 @@ function render(){
   $('tagIntro').textContent=D.tagNote;
   $('tags').innerHTML=D.tags.map(t=>'<span>#'+esc(t[0])+'<em>'+t[1]+'</em></span>').join('');
   $('ledger').innerHTML=D.areas.map(a=>{const t=D.cafes.filter(c=>c.area===a.id&&c[k]&&c[k].score>0).sort((x,y)=>y[k].score-x[k].score)[0];
-    return '<button class="lrow" data-a="'+a.id+'" aria-current="'+(S.area===a.id)+'"><span class="place">'+esc(a.name)+'</span><span><span class="winner">'+(t?esc(t.name):'Too quiet to call')+'</span><span class="sub">'+(t?[t.reviews?t.reviews.rating+'★':'',t.guides.length?plural(t.guides.length,'source'):''].filter(Boolean).join(' · ')+' '+mv(t,k):'Not enough data for this view')+'</span></span></button>'}).join('');
+    return '<button class="lrow" data-a="'+a.id+'" aria-current="'+(S.area===a.id)+'"><span class="place">'+esc(a.name)+'</span><span><span class="winner">'+(t?esc(t.name):'Too quiet to call')+'</span><span class="sub">'+(t?mv(t,k):'Not enough data for this view')+'</span></span></button>'}).join('');
   $('area').value=S.area;
 }
 function mv(c,k){
@@ -240,12 +241,6 @@ function mv(c,k){
   if(v===0)return '<span class="mv" title="Same position">=</span>';
   const up=v>0,n=Math.abs(v);
   return '<span class="mv '+(up?'up':'down')+'" title="'+(up?'Up ':'Down ')+n+'"><span aria-hidden="true">'+(up?'▲':'▼')+'</span><span class="sr">'+(up?'Up ':'Down ')+'</span>'+n+'</span>';
-}
-function why(c,m,k){
-  const bits=[];
-  if(c.reviews)bits.push(c.reviews.rating+'★ from '+fmt(c.reviews.count)+' Google and Tripadvisor reviews');
-  if(c.guides.length)bits.push(plural(c.guides.length,'independent source')+' named it');
-  return bits.length?bits.join('. ')+'.':'Getting attention on Instagram.';
 }
 $('tabs').innerHTML=TABS.map(t=>'<button class="tab" data-k="'+t[0]+'">'+t[1]+'</button>').join('');
 $('tabs').onclick=e=>{const b=e.target.closest('.tab');if(b){S.tab=b.dataset.k;render()}};

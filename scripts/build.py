@@ -6,7 +6,7 @@ Inputs:  data/raw/instagram.jsonl, data/raw/web.jsonl, data/raw/guides.jsonl,
 Outputs: data/site.json, site/index.html (for any static host),
          site/loudest-cup.html (body-only page for publishing as an artifact)
 """
-import collections, datetime, glob, json, math, os, re, time
+import collections, datetime, glob, html, json, math, os, re, time, urllib.parse
 
 NOW = int(time.time())
 DAY = 86400
@@ -22,6 +22,7 @@ SITE_NAMES = {"whatson.ae": "What's On", "www.arabianbusiness.com": "Arabian Bus
               "mariandthecity.com": "Mari and the City", "emirateswoman.com": "Emirates Woman", "lovin.co": "Lovin Dubai"}
 CAFE_WORDS = re.compile(r"coffee|caf[eé]|roast|espresso|latte|brunch|bakery|barista", re.I)
 
+TODAY_Y = time.strftime("%Y", time.gmtime(NOW))
 cafes = json.load(open("data/cafes.json"))
 areas = cafes["areas"]
 cafes = cafes["cafes"]
@@ -29,7 +30,7 @@ press = json.load(open("data/press.json"))
 wanderlog = json.load(open("data/raw/wanderlog.json")) if os.path.exists("data/raw/wanderlog.json") else []
 
 # Publishers that sell property, travel, tickets or gifts, or are other cafes: their lists aren't independent.
-NOT_INDEPENDENT = re.compile(r"bayut|thrillophilia|sothebys|alharmain|propertyfinder|nextholidays|holidify|beautifulbrands|tourscanner|damac|agluxury|forevertourism|gokite|merikacafe|myholidays|holidaylocationguide|akbartravels|wowdubaitravel|rentechdigital|regencyholidays|wowdeals|insurancemarket|luxuryproperty|anika-property|coffeeroasterfinder|medium\\.com|sourdoughbread|alkhail|pickyourtrail|onevasco|uaevisaonline|nyongesasande|igp\\.com|twocontinents|addresshotels|satatravels|flyingcup|allsopp|greatvaluevacations|triptipedia|indubaimall|trip101|makemytrip|raynatours|saadatrent|arabmls|thebeach\\.ae|wego|almaya|beststartupstory|sana\\.|grandmotherroastery|ticketstodo|citywalk|desertcitystays|visitrasalkhaimah|aleppo-grills|circle-cafe|fnp\\.ae|dxboffplan|bigbustours|deliveroo|theentertainerme")
+NOT_INDEPENDENT = re.compile(r"bayut|thrillophilia|sothebys|alharmain|propertyfinder|nextholidays|holidify|beautifulbrands|tourscanner|damac|agluxury|forevertourism|gokite|merikacafe|myholidays|holidaylocationguide|akbartravels|wowdubaitravel|rentechdigital|regencyholidays|wowdeals|insurancemarket|luxuryproperty|anika-property|coffeeroasterfinder|medium\.com|sourdoughbread|alkhail|pickyourtrail|onevasco|uaevisaonline|nyongesasande|igp\.com|twocontinents|addresshotels|satatravels|flyingcup|allsopp|greatvaluevacations|triptipedia|indubaimall|trip101|makemytrip|raynatours|saadatrent|arabmls|thebeach\.ae|wego|almaya|beststartupstory|sana\.|grandmotherroastery|ticketstodo|citywalk|desertcitystays|visitrasalkhaimah|aleppo-grills|circle-cafe|fnp\.ae|dxboffplan|bigbustours|deliveroo|theentertainerme|bakerskitchen")
 PUBLISHERS = {"whatson.ae": "What's On", "harpersbazaararabia.com": "Harper's Bazaar Arabia", "cntravellerme.com": "Condé Nast Traveller ME",
               "factmagazines.com": "FACT", "front.factmagazines.com": "FACT", "gulfnews.com": "Gulf News", "timeoutdubai.com": "Time Out Dubai",
               "lovin.co": "Lovin Dubai", "guide.michelin.com": "Michelin Guide", "gqmiddleeast.com": "GQ Middle East", "cosmopolitanme.com": "Cosmopolitan ME",
@@ -39,18 +40,46 @@ PUBLISHERS = {"whatson.ae": "What's On", "harpersbazaararabia.com": "Harper's Ba
               "dannibindubai.com": "Danni B in Dubai", "fltrmagazine.com": "FLTR Magazine", "gaultmillauae.com": "Gault&Millau UAE",
               "squaremeal.ae": "SquareMeal", "ahlanlive.com": "Ahlan", "graziamagazine.com": "Grazia Middle East", "elitetraveler.com": "Elite Traveler",
               "worldofmouth.app": "World of Mouth", "roadbook.com": "Roadbook", "platinumlist.net": "Platinumlist", "roasters.app": "Roasters App",
-              "vdqa104.testvisitdubai.com": "Visit Dubai", "focus.hidubai.com": "Hi Dubai", "theculturetrip.com": "Culture Trip", "planetware.com": "PlanetWare"}
+              "vdqa104.testvisitdubai.com": "Visit Dubai", "timeoutsharjah.com": "Time Out Dubai", "front.factmagazines.com": "FACT",
+              "blog.dubailocal.ae": "Dubai Local", "nearfarmag.com": "NearFar Magazine", "dubaisbest.com": "Dubai's Best", "adameshandbook.com": "Adam's Handbook",
+              "traveltastediscover.com": "Travel Taste Discover", "thebohochica.com": "The Boho Chica", "dubai-on.com": "Dubai On", "latestnewsdubai.com": "Latest News Dubai",
+              "foodiva.net": "Foodiva", "wheresachi.com": "Where's Achi", "thegaggler.com": "The Gaggler", "travelsaga.com": "Travel Saga", "arabiers.com": "Arabiers",
+              "dubainight.com": "Dubai Night", "albertreview.com.au": "Albert Review", "theneedforcoffee.com": "The Need for Coffee", "mala.ae": "Mala", "ebestdubai.ae": "eBest Dubai",
+              "hungrito.com": "Hungrito", "dubaimusts.me": "Dubai Musts", "myreviewly.com": "MyReviewly", "thingstododubai.com": "Things To Do Dubai", "uaestories.com": "UAE Stories",
+              "artandthensome.com": "Art and Then Some", "liloneoftheashes.com": "Lil One of the Ashes", "theluxediary.com": "The Luxe Diary", "rumemagazine.com": "Rume Magazine",
+              "few.ae": "Few", "experiencesluxe.com": "Experiences Luxe", "world-arabia.com": "World Arabia", "mariandthecity.com": "Mari and the City", "mycustardpie.com": "My Custard Pie","focus.hidubai.com": "Hi Dubai", "theculturetrip.com": "Culture Trip", "planetware.com": "PlanetWare"}
 GENERIC = {"society", "french bakery", "home bakery", "black coffee", "the eatery", "late lounge", "bakery", "the coffee lab", "circle cafe", "brews cafe", "cafe rider custom", "emirati coffee roastery"}  # too common to match in captions
 COFFEE_CATS = {"Cafe", "Coffee shop", "Coffee roastery", "Coffee store"}
-CHAINS = re.compile(r"starbucks|costa|tim hortons|dunkin|caribou|peet|seattle|krispy|cinnabon|^paul\\b|ladur[eé]e|angelina|mcdonald|nespresso|lavazza|patchi|bateel|hotel|resort|jumeirah al qasr|versace|armani|burj al arab|"
+CHAINS = re.compile(r"starbucks|costa|tim hortons|dunkin|caribou|peet|seattle|krispy|cinnabon|^paul\b|ladur[eé]e|angelina|mcdonald|nespresso|lavazza|patchi|bateel|hotel|resort|jumeirah al qasr|versace|armani|burj al arab|"
                     r"coffee club|pain quotidien|magnolia|el&n|eggspectation|ikea|marks & spencer|huqqa|royal tearoom|lobby lounge|shai salon|raffles|peacock alley|the tea room|hafiz mustafa|moishi|freez|morelli|said dal|katrina|^cake$|loqa|humyum|brownie point|choix|the patisserie|cipriani|room 1618|the farm|terra eatery|darjeeling|al fanar|al khayma|al mallah|the guild|ror coffee|gold box|intellect|specialty batch|mattina|coffee museum|artisan bakers", re.I)
 DISPLAY_TRIM = re.compile(r"\s+(Dubai Health Care City|Dubai Hills|Al Thanyah?|Tilal AL Ghaf|Concept Store.*|LLC|UAE.*|Dubai|Restaurant|& Restaurant|Cafe & Kitchen)$", re.I)
-AREA_RULES = [("d3", r"design district|d3"), ("marina", r"marina|jbr|jumeirah beach residence|jlt|jumeirah lake|bluewaters|the walk"),
+AREA_RULES = [("d3", r"design district|d3"),
+              ("hills", r"dubai hills|hadaeq|mohammed bin rashid|al barsha|mall of the emirates|emirates hills|al thanyah|jumeirah islands|jumeirah village|jvc|tilal al ghaf|sustainable city|motor city|arabian ranches|town square|investment park|gold and diamond"),
+              ("old", r"health ?care city|al razzi|muraqqabat"),("marina", r"marina|jbr|jumeirah beach residence|jlt|jumeirah lake|bluewaters|the walk"),
               ("difc", r"difc|financial cent|trade cent"), ("downtown", r"downtown|business bay|burj khalifa|dubai mall|souk al bahar|boulevard|opera"),
               ("alquoz", r"al quoz|al qouz|alserkal|quoz"), ("alwasl", r"al wasl|al safa|al manara|wasl"),
               ("jumeirah", r"jumeirah|jumeira|umm suqeim|umm suqueim|kite beach|la mer|palm|city walk|al satwa|satwa|sufouh"),
               ("old", r"deira|bur dubai|fahidi|al seef|karama|mankhool|al souq|bastakiya|creek|oud metha|al jaffiliya|al raffa"),
               ("east", r"mirdif|nad al sheba|festival|rashidiya|al warqa|meydan")]
+
+
+def pretty(host):
+    return PUBLISHERS.get(host) or re.sub(r"\.[a-z.]+$", "", host).replace("-", " ").title()
+
+
+DISPLAY_NAMES = {"Orto cafe": "Orto", "Risen Café and Artisanal Bakery": "Risen Café", "Bloomsbury's Boutique Cafe & Artisan Bakery": "Bloomsbury's",
+                 "Arrows and Sparrows Cafe": "Arrows and Sparrows", "The Hamptons Cafe & Restaurant": "The Hamptons", "Xva Café & Restaurant": "XVA Café", "MONDOUX": "Mondoux",
+                 "RIINA": "Riina", "THREE Coffee": "Three Coffee", "EARTH ROASTERY": "Earth Roastery", "Comptoir 102 Concept Store & Healthy Eatery": "Comptoir 102",
+                 "Friends Avenue Cafe": "Friends Avenue", "Grandmother Roastery": "Grandmother Roastery", "Pekoe tea & bread bar": "Pekoe"}
+LINKS = json.load(open("data/link_status.json")) if os.path.exists("data/link_status.json") else {}
+
+
+def recency(date):
+    """Newer articles count for more. Undated ones sit in the middle."""
+    if not re.match(r"\d{4}", date or ""):
+        return .7
+    age = int(TODAY_Y) - int(date[:4])
+    return 1 if age <= 2 else .7 if age <= 4 else .4
 
 
 def norm(s):
@@ -126,7 +155,7 @@ if os.path.exists("data/raw/guides.jsonl"):
     for line in open("data/raw/guides.jsonl"):
         r = json.loads(line)
         if r["name"] not in SKIP_GUIDES:
-            articles.append({"name": r["name"], "kind": r["kind"], "title": r["name"], "url": r["url"], "date": r["date"] or "", "text": r["text"]})
+            articles.append({"name": r["name"].replace(" readers", ""), "kind": r["kind"], "title": r["name"], "url": r["url"], "date": r["date"] or "", "text": r["text"]})
 articles = [a for a in articles if not a["date"] or a["date"] >= SOURCE_SINCE]
 for a in articles:
     for c in cafes:
@@ -152,6 +181,16 @@ for c in new.values():
     if c["aliases"]:
         c["_re"] = matcher(c)
 cafes += [c for c in new.values() if sum(p.get("numRatings") or 0 for p in c["_wl"]) >= 50 or sum(len(p.get("sources") or []) for p in c["_wl"]) >= 2]
+for c in cafes:
+    biggest = max(c.get("_wl", []), key=lambda p: p.get("numRatings") or 0, default=None)
+    if biggest and (c["area"] == "other" or c["name"] in new or norm(c["name"]) in new):
+        c["area"] = area_of(biggest.get("address") or "")
+    if c["name"] in DISPLAY_NAMES:
+        c["name"] = DISPLAY_NAMES[c["name"]]
+    c["area"] = {"Angel Cakes": "hills", "Bloomsbury's": "old"}.get(c["name"], c["area"])
+    c["maps"] = "https://www.google.com/maps/search/?api=1&query=" + urllib.parse.quote(c["name"] + " Dubai")
+    if biggest and biggest.get("placeId"):
+        c["maps"] += "&query_place_id=" + biggest["placeId"]
 
 for c in cafes:
     wl = c.get("_wl", [])
@@ -166,15 +205,21 @@ for c in cafes:
             u = s.get("url") or ""
             if "//" not in u:
                 continue
-            host = re.sub(r"^www\\.", "", u.split("/")[2])
+            host = re.sub(r"^www\.", "", u.split("/")[2])
             if NOT_INDEPENDENT.search(host):
                 continue
-            c["_sources"].append({"name": PUBLISHERS.get(host, host), "kind": "news", "title": PUBLISHERS.get(host, host), "url": u, "date": ""})
+            state = LINKS.get(u, {})
+            if host.endswith("testvisitdubai.com"):
+                u = u.replace(u.split("/")[2], "www.visitdubai.com")
+            c["_sources"].append({"name": pretty(host), "kind": "news", "title": pretty(host), "url": u, "date": state.get("date", ""), "dead": state.get("dead", False)})
 
 for c in cafes:
     c["guides"] = sorted({s["name"] for s in c["_sources"]})  # one vote per publisher, however many articles
-    uniq = {(s["name"]): s for s in sorted(c["_sources"], key=lambda s: s["date"] or "")}
-    c["sources"] = sorted(uniq.values(), key=lambda s: s["date"] or "", reverse=True)[:8]
+    uniq = {}
+    for s in sorted(c["_sources"], key=lambda s: (not s.get("dead"), s["date"] or "")):  # a live, newer article wins
+        uniq[s["name"]] = s
+    c["_gw"] = sum(recency(s["date"]) for s in uniq.values())
+    c["sources"] = [{k: v for k, v in s.items() if k != "dead"} for s in sorted(uniq.values(), key=lambda s: s["date"] or "", reverse=True) if not s.get("dead")][:8]
     c["kinds"] = dict(collections.Counter(s["kind"] for s in uniq.values()))
     p = PLACES.get(c["name"])
     if p and p.get("count"):
@@ -204,6 +249,11 @@ def metrics(c, days, end=0):
     return {"creators": len(creators | paid_only), "weighted": len(creators) + .5 * len(paid_only), "views": int(views), "posts": len(earned)}
 
 
+# Quiet listings: no reviews, one source at most and no recent posts. Too little to rank.
+cafes[:] = [c for c in cafes if c.get("reviews") or len(c["guides"]) > 1 or
+            any(p["ts"] >= NOW - 365 * DAY and not is_own(c, p) for p in c["_hits"])]
+
+
 def review_score(c):
     """0-1. Pulls small review counts towards the average, so 5.0 from six people isn't a win."""
     r = c.get("reviews")
@@ -217,13 +267,13 @@ def score(ms, key, trend=False):
     """0-100 on log scales. A cafe with no review data is scored on its other signals."""
     mc = max(math.log1p(m["weighted"]) for m in ms) or 1
     mv = max(math.log1p(m["views"]) for m in ms) or 1
-    mg = max(math.log1p(len(c["guides"])) for c in cafes) or 1
+    mg = max(math.log1p(c["_gw"]) for c in cafes) or 1
     for c, m in zip(cafes, ms):
         cr, vi = math.log1p(m["weighted"]) / mc, math.log1p(m["views"]) / mv
         if trend:
             s = .7 * cr + .3 * vi if m["posts"] else 0
         else:
-            s = WEIGHTS["creators"] * cr + WEIGHTS["views"] * vi + WEIGHTS["guides"] * math.log1p(len(c["guides"])) / mg
+            s = WEIGHTS["creators"] * cr + WEIGHTS["views"] * vi + WEIGHTS["guides"] * math.log1p(c["_gw"]) / mg
             s = s + WEIGHTS["reviews"] * review_score(c) if c.get("reviews") else s / (1 - WEIGHTS["reviews"])
         c[key] = {**m, "score": round(100 * s, 1)}
 
@@ -233,12 +283,12 @@ score([metrics(c, 90) for c in cafes], "d90", trend=True)
 
 for c in cafes:
     m = c["d365"]
-    c["guidesTab"] = {**m, "score": len(c["guides"]) * 10 + min(m["creators"], 9)} if c["guides"] else None
+    c["guidesTab"] = {**m, "score": round(c["_gw"] * 10 + min(m["creators"], 9) / 10, 1)} if c["guides"] else None
     r = c.get("reviews")
     c["reviewsTab"] = {**m, "score": round(100 * review_score(c), 1)} if r and r["count"] >= MIN_REVIEWS else None
 
 # Movement: rank now against the last saved rank, like a stock's change on the day.
-METHOD = "v2-google" if PLACES else "v2"  # a change of method resets the comparison, so it never shows as a real move
+METHOD = "v3-google" if PLACES else "v3"  # a change of method resets the comparison, so it never shows as a real move
 TODAY = time.strftime("%Y-%m-%d", time.gmtime(NOW))
 TABS = ["d365", "d90", "guidesTab", "reviewsTab"]
 
@@ -275,7 +325,8 @@ os.makedirs("data/history", exist_ok=True)
 json.dump({"date": TODAY, "method": METHOD, "ranks": now_ranks}, open(f"data/history/{TODAY}.json", "w"), ensure_ascii=False)
 
 for c in cafes:
-    c["url"] = c.get("url") or (f"https://www.instagram.com/{c['handles'][0]}/" if c.get("handles") else
+    c["url"] = (c.get("url") or "").replace("http://", "https://", 1) if not LINKS.get((c.get("url") or "").replace("http://", "https://", 1), {}).get("dead") else c["url"]
+    c["url"] = c["url"] or (f"https://www.instagram.com/{c['handles'][0]}/" if c.get("handles") else
                                 "https://www.google.com/maps/search/" + re.sub(r"\s+", "+", c["name"] + " Dubai"))
 
 window = [p for p in posts if p["ts"] >= NOW - 365 * DAY]
@@ -301,14 +352,14 @@ site = {
                **{t: {"score": c[t]["score"]} if c.get(t) else None for t in TABS}} for c in cafes],
     "moveNote": move_note,
     "tags": tags,
-    "tabLabels": {"d365": "Overall", "d90": "Trending now", "guidesTab": "Most recommended", "reviewsTab": "Best reviewed"},
+    "tabLabels": {"d90": "Trending now", "d365": "Overall", "guidesTab": "Most recommended", "reviewsTab": "Best reviewed"},
     "tabNotes": {"d365": "Ranked by recommendations, reviews and social posts",
                  "d90": "Ranked by Instagram activity in the past 90 days",
-                 "guidesTab": "Ranked by how many independent publishers recommend them",
+                 "guidesTab": "Ranked by independent recommendations, with newer articles counting for more",
                  "reviewsTab": f"Google and Tripadvisor combined, minimum {MIN_REVIEWS} reviews"},
     "tagNote": f"The most-used tags across {len(window):,} Dubai posts from the past 12 months, with how many posts used each.",
     "method": [
-        {"weight": "40%", "name": "Recommendations", "text": f"How many of {len(used)} independent publishers named the cafe. Each counts once. Sites selling property, travel or tickets don't count."},
+        {"weight": "40%", "name": "Recommendations", "text": f"How many of {len(used)} independent publishers named the cafe. Each counts once, and newer articles count for more. Sites selling property, travel or tickets don't count."},
         {"weight": "30%", "name": "Reviews", "text": "Google and Tripadvisor ratings and review counts, with small counts pulled towards the average."},
         {"weight": "30%", "name": "Talk", "text": "Instagram activity from people other than the cafe. One viral reel can't decide the chart."},
         {"weight": "½", "name": "Ads", "text": "Posts marked as an ad, gift or invite count for half."},
@@ -325,13 +376,38 @@ site = {
 }
 json.dump(site, open("data/site.json", "w"), ensure_ascii=False, indent=1)
 
+SITE_URL = "https://loudest-cup.onrender.com/"
+top20 = sorted(ranked, key=lambda c: -c["d365"]["score"])[:20]
+AREA_NAMES = {a["id"]: a["name"] for a in areas}
+TITLE = "Best Coffee Shops and Cafes in Dubai | Loudest Cup"
+DESCRIPTION = (f"The top coffee shops and cafes in Dubai, ranked weekly from {len(used)} independent publishers, Google and Tripadvisor reviews and social talk. "
+               f"This week's N°1: {top20[0]['name']}.")
+ld = {"@context": "https://schema.org", "@type": "ItemList", "name": "Best coffee shops and cafes in Dubai", "url": SITE_URL,
+      "itemListElement": [{"@type": "ListItem", "position": i + 1, "name": c["name"], "url": c["url"]} for i, c in enumerate(top20)]}
+HEAD = f"""<!doctype html><html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>{TITLE}</title>
+<meta name="description" content="{html.escape(DESCRIPTION)}">
+<link rel="canonical" href="{SITE_URL}">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<meta property="og:type" content="website"><meta property="og:url" content="{SITE_URL}">
+<meta property="og:site_name" content="Loudest Cup"><meta property="og:title" content="{TITLE}">
+<meta property="og:description" content="{html.escape(DESCRIPTION)}">
+<meta property="og:image" content="{SITE_URL}og.png"><meta property="og:image:width" content="1200"><meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="{TITLE}">
+<meta name="twitter:description" content="{html.escape(DESCRIPTION)}"><meta name="twitter:image" content="{SITE_URL}og.png">
+<script type="application/ld+json">{json.dumps(ld, ensure_ascii=False).replace("</", "<" + chr(92) + "/")}</script>
+</head><body style="margin:0">"""
+prerender = "".join(f'<li class="row"><span class="r">{i + 1}</span><span class="nm"><a href="{html.escape(c["url"])}">{html.escape(c["name"])}</a></span><span class="ar"><a href="{html.escape(c["maps"])}">{html.escape(AREA_NAMES[c["area"]])}</a></span></li>' for i, c in enumerate(top20))
+open("site/robots.txt", "w").write(f"User-agent: *\nAllow: /\nDisallow: /template.html\nDisallow: /loudest-cup.html\n\nSitemap: {SITE_URL}sitemap.xml\n")
+open("site/sitemap.xml", "w").write(f'<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url><loc>{SITE_URL}</loc><lastmod>{TODAY}</lastmod><changefreq>weekly</changefreq></url></urlset>\n')
+open("site/favicon.svg", "w").write('<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#08302c"/><circle cx="16" cy="16" r="10" fill="#f7b90f"/><path d="M11 18c2-5 8-5 10-1" fill="none" stroke="#eef3e6" stroke-width="2" stroke-linecap="round"/></svg>')
+
 tpl = open("site/template.html").read()
 payload = json.dumps(site, ensure_ascii=False).replace("</", "<\\/")
 page = tpl.replace("/*DATA*/", payload)
 open("site/loudest-cup.html", "w").write(page)
-open("site/index.html", "w").write('<!doctype html><html lang="en"><head><meta charset="utf-8">'
-    '<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"></head><body style="margin:0">'
-    + page + "</body></html>")
+open("site/index.html", "w").write(HEAD + re.sub(r"<title>.*?</title>\n?", "", page, count=1).replace('<ol class="chart" id="chart"></ol>', '<ol class="chart" id="chart">' + prerender + "</ol>") + "</body></html>")
 
 print(site["totals"], WEIGHTS)
 for c in sorted(ranked, key=lambda c: -c["d365"]["score"])[:30]:
