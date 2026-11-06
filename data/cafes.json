@@ -1,0 +1,681 @@
+{
+ "areas": [
+  {
+   "id": "alquoz",
+   "name": "Al Quoz"
+  },
+  {
+   "id": "jumeirah",
+   "name": "Jumeirah"
+  },
+  {
+   "id": "alwasl",
+   "name": "Al Wasl & Al Safa"
+  },
+  {
+   "id": "downtown",
+   "name": "Downtown & Business Bay"
+  },
+  {
+   "id": "difc",
+   "name": "DIFC & Trade Centre"
+  },
+  {
+   "id": "marina",
+   "name": "Marina, JBR & JLT"
+  },
+  {
+   "id": "old",
+   "name": "Old Dubai"
+  },
+  {
+   "id": "east",
+   "name": "Mirdif & Nad Al Sheba"
+  },
+  {
+   "id": "d3",
+   "name": "Dubai Design District"
+  },
+  {
+   "id": "other",
+   "name": "Around Dubai"
+  }
+ ],
+ "cafes": [
+  {
+   "name": "Trio Coffee",
+   "area": "jumeirah",
+   "aliases": [
+    "Trio Coffee",
+    "Trio The Bakery"
+   ],
+   "handles": [
+    "triocoffee.ae"
+   ],
+   "press": []
+  },
+  {
+   "name": "Subko",
+   "area": "alquoz",
+   "aliases": [
+    "Subko"
+   ],
+   "handles": [
+    "subkouae"
+   ],
+   "press": []
+  },
+  {
+   "name": "Forever Rose",
+   "area": "alwasl",
+   "aliases": [
+    "Forever Rose"
+   ],
+   "handles": [
+    "foreverrosecafe"
+   ],
+   "press": [
+    "Forever Rose"
+   ]
+  },
+  {
+   "name": "Casa Tasa",
+   "area": "alwasl",
+   "aliases": [
+    "Casa Tasa"
+   ],
+   "handles": [
+    "casatasa.ae"
+   ],
+   "press": []
+  },
+  {
+   "name": "Julith",
+   "area": "alquoz",
+   "aliases": [
+    "Julith"
+   ],
+   "handles": [
+    "julith.coffee"
+   ],
+   "press": [
+    "Julith"
+   ]
+  },
+  {
+   "name": "Mazmi Cafe",
+   "area": "old",
+   "aliases": [
+    "Mazmi"
+   ],
+   "handles": [
+    "mazmicafe"
+   ],
+   "press": [
+    "Mazmi"
+   ]
+  },
+  {
+   "name": "Wave Dubai",
+   "area": "east",
+   "aliases": [
+    "Wave Dubai"
+   ],
+   "handles": [
+    "wave.ad"
+   ],
+   "press": [
+    "Wave Dubai"
+   ]
+  },
+  {
+   "name": "Knot Bakehouse",
+   "area": "jumeirah",
+   "aliases": [
+    "Knot Bakehouse"
+   ],
+   "handles": [
+    "knotbakehouse"
+   ],
+   "press": []
+  },
+  {
+   "name": "Off the Street",
+   "area": "other",
+   "aliases": [
+    "Off the Street Dubai"
+   ],
+   "handles": [
+    "offthestreetdxb"
+   ],
+   "press": []
+  },
+  {
+   "name": "Lune",
+   "area": "other",
+   "aliases": [
+    "Lune Dubai"
+   ],
+   "handles": [
+    "lunedubai"
+   ],
+   "press": []
+  },
+  {
+   "name": "Hampstead Bakery",
+   "area": "downtown",
+   "aliases": [
+    "Hampstead Bakery"
+   ],
+   "handles": [
+    "hampsteadbakeryandcafe"
+   ],
+   "press": []
+  },
+  {
+   "name": "Bishette Bakery",
+   "area": "east",
+   "aliases": [
+    "Bishette"
+   ],
+   "handles": [
+    "bishettebakery"
+   ],
+   "press": []
+  },
+  {
+   "name": "Caju Coffee House",
+   "area": "other",
+   "aliases": [
+    "Caju Coffee"
+   ],
+   "handles": [
+    "caju_coffee_house"
+   ],
+   "press": []
+  },
+  {
+   "name": "Saddle",
+   "area": "other",
+   "aliases": [
+    "Saddle Cafe",
+    "Saddle Dubai"
+   ],
+   "handles": [
+    "saddledubai"
+   ],
+   "press": [
+    "Saddle"
+   ]
+  },
+  {
+   "name": "ONA Coffee",
+   "area": "other",
+   "aliases": [
+    "ONA Dubai"
+   ],
+   "handles": [
+    "ona.dubai"
+   ],
+   "press": []
+  },
+  {
+   "name": "Sla Cafe",
+   "area": "other",
+   "aliases": [
+    "Sla Cafe"
+   ],
+   "handles": [
+    "slacafe"
+   ],
+   "press": []
+  },
+  {
+   "name": "Blume",
+   "area": "other",
+   "aliases": [
+    "Blume Dubai"
+   ],
+   "handles": [
+    "blume_dubai"
+   ],
+   "press": []
+  },
+  {
+   "name": "Raw Coffee",
+   "area": "alquoz",
+   "aliases": [
+    "Raw Coffee"
+   ],
+   "handles": [
+    "rawcoffeecompany"
+   ],
+   "press": [
+    "Raw Coffee"
+   ]
+  },
+  {
+   "name": "Nala",
+   "area": "alwasl",
+   "aliases": [
+    "Nala Dubai"
+   ],
+   "handles": [
+    "enjoynala"
+   ],
+   "press": [
+    "Nala"
+   ]
+  },
+  {
+   "name": "Oath",
+   "area": "jumeirah",
+   "aliases": [
+    "Oath Cafe",
+    "The Oath"
+   ],
+   "handles": [
+    "oath.ae"
+   ],
+   "press": [
+    "Oath"
+   ]
+  },
+  {
+   "name": "Seva",
+   "area": "jumeirah",
+   "aliases": [
+    "Seva Table",
+    "Seva Dubai"
+   ],
+   "handles": [],
+   "press": [
+    "Seva"
+   ]
+  },
+  {
+   "name": "Nightjar",
+   "area": "alquoz",
+   "aliases": [
+    "Nightjar"
+   ],
+   "handles": [],
+   "press": [
+    "Nightjar"
+   ]
+  },
+  {
+   "name": "The Espresso Lab",
+   "area": "d3",
+   "aliases": [
+    "Espresso Lab"
+   ],
+   "handles": [],
+   "press": [
+    "The Espresso Lab"
+   ]
+  },
+  {
+   "name": "Tom & Serg",
+   "area": "alquoz",
+   "aliases": [
+    "Tom & Serg",
+    "Tom and Serg",
+    "Tom&Serg"
+   ],
+   "handles": [],
+   "press": [
+    "Tom & Serg"
+   ]
+  },
+  {
+   "name": "Cassette",
+   "area": "alquoz",
+   "aliases": [
+    "Cassette Dubai",
+    "Cassette Cafe"
+   ],
+   "handles": [],
+   "press": [
+    "Cassette"
+   ]
+  },
+  {
+   "name": "Amongst Few",
+   "area": "jumeirah",
+   "aliases": [
+    "Amongst Few"
+   ],
+   "handles": [],
+   "press": [
+    "Amongst Few"
+   ]
+  },
+  {
+   "name": "Arabian Tea House",
+   "area": "old",
+   "aliases": [
+    "Arabian Tea House"
+   ],
+   "handles": [],
+   "press": [
+    "Arabian Tea House"
+   ]
+  },
+  {
+   "name": "Lulu and the Beanstalk",
+   "area": "difc",
+   "aliases": [
+    "Lulu and the Beanstalk",
+    "Lulu & the Beanstalk"
+   ],
+   "handles": [],
+   "press": [
+    "Lulu and the Beanstalk"
+   ]
+  },
+  {
+   "name": "The Grey",
+   "area": "alwasl",
+   "aliases": [
+    "The Grey",
+    "The Grey Al Wasl",
+    "The Grey Cafe",
+    "The Grey Dubai"
+   ],
+   "handles": [],
+   "press": [
+    "The Grey"
+   ]
+  },
+  {
+   "name": "Nette",
+   "area": "alquoz",
+   "aliases": [
+    "Nette Dubai",
+    "Nette Cafe"
+   ],
+   "handles": [],
+   "press": [
+    "Nette"
+   ]
+  },
+  {
+   "name": "Kulture House",
+   "area": "jumeirah",
+   "aliases": [
+    "Kulture House"
+   ],
+   "handles": [],
+   "press": [
+    "Kulture House"
+   ]
+  },
+  {
+   "name": "Boston Lane",
+   "area": "alquoz",
+   "aliases": [
+    "Boston Lane"
+   ],
+   "handles": [],
+   "press": [
+    "Boston Lane"
+   ]
+  },
+  {
+   "name": "Common Grounds",
+   "area": "marina",
+   "aliases": [
+    "Common Grounds"
+   ],
+   "handles": [],
+   "press": [
+    "Common Grounds"
+   ]
+  },
+  {
+   "name": "RX Coffee Apothecary",
+   "area": "jumeirah",
+   "aliases": [
+    "RX Coffee"
+   ],
+   "handles": [],
+   "press": [
+    "RX Coffee Apothecary"
+   ]
+  },
+  {
+   "name": "Of the Earth",
+   "area": "alquoz",
+   "aliases": [
+    "Of the Earth"
+   ],
+   "handles": [],
+   "press": [
+    "Of the Earth"
+   ]
+  },
+  {
+   "name": "One Life",
+   "area": "d3",
+   "aliases": [
+    "One Life Cafe",
+    "One Life Kitchen"
+   ],
+   "handles": [],
+   "press": [
+    "One Life"
+   ]
+  },
+  {
+   "name": "The Meld",
+   "area": "jumeirah",
+   "aliases": [
+    "The Meld"
+   ],
+   "handles": [
+    "themeldconcept"
+   ],
+   "press": [
+    "The Meld"
+   ]
+  },
+  {
+   "name": "Haas",
+   "area": "jumeirah",
+   "aliases": [
+    "Haas Dubai"
+   ],
+   "handles": [],
+   "press": [
+    "Haas"
+   ]
+  },
+  {
+   "name": "Milk Haus",
+   "area": "east",
+   "aliases": [
+    "Milk Haus"
+   ],
+   "handles": [],
+   "press": [
+    "Milk Haus"
+   ]
+  },
+  {
+   "name": "PDL",
+   "area": "east",
+   "aliases": [
+    "PDL Nad Al Sheba",
+    "PDL Dubai"
+   ],
+   "handles": [],
+   "press": [
+    "PDL"
+   ]
+  },
+  {
+   "name": "Mokha 1450",
+   "area": "difc",
+   "aliases": [
+    "Mokha 1450"
+   ],
+   "handles": [],
+   "press": [
+    "Mokha 1450"
+   ]
+  },
+  {
+   "name": "Bocasu",
+   "area": "alquoz",
+   "aliases": [
+    "Bocasu"
+   ],
+   "handles": [],
+   "press": [
+    "Bocasu"
+   ]
+  },
+  {
+   "name": "Splendour Fields",
+   "area": "marina",
+   "aliases": [
+    "Splendour Fields"
+   ],
+   "handles": [],
+   "press": [
+    "Splendour Fields"
+   ]
+  },
+  {
+   "name": "Brunch and Cake",
+   "area": "jumeirah",
+   "aliases": [
+    "Brunch and Cake",
+    "Brunch & Cake"
+   ],
+   "handles": [],
+   "press": [
+    "Brunch and Cake"
+   ]
+  },
+  {
+   "name": "La Nena",
+   "area": "alquoz",
+   "aliases": [
+    "La Nena"
+   ],
+   "handles": [
+    "lanenacoffee"
+   ],
+   "press": [
+    "La Nena"
+   ]
+  },
+  {
+   "name": "The Sum Of Us",
+   "area": "difc",
+   "aliases": [
+    "The Sum Of Us"
+   ],
+   "handles": [],
+   "press": [
+    "The Sum Of Us"
+   ]
+  },
+  {
+   "name": "Nomad Day Bar",
+   "area": "difc",
+   "aliases": [
+    "Nomad Day Bar"
+   ],
+   "handles": [],
+   "press": [
+    "Nomad Day Bar"
+   ]
+  },
+  {
+   "name": "Lazy Cat",
+   "area": "other",
+   "aliases": [
+    "Lazy Cat"
+   ],
+   "handles": [],
+   "press": [
+    "Lazy Cat"
+   ]
+  },
+  {
+   "name": "21grams",
+   "area": "jumeirah",
+   "aliases": [
+    "21grams"
+   ],
+   "handles": [],
+   "press": [
+    "21grams"
+   ]
+  },
+  {
+   "name": "Stomping Grounds",
+   "area": "jumeirah",
+   "aliases": [
+    "Stomping Grounds"
+   ],
+   "handles": [],
+   "press": [
+    "Stomping Grounds"
+   ]
+  },
+  {
+   "name": "Cypher Urban Roastery",
+   "area": "alquoz",
+   "aliases": [
+    "Cypher Urban Roastery",
+    "Cypher Roastery",
+    "Cypher Coffee"
+   ],
+   "handles": [],
+   "press": []
+  },
+  {
+   "name": "BRIX Café",
+   "area": "jumeirah",
+   "aliases": [
+    "BRIX Café",
+    "BRIX Cafe",
+    "Brix Cafe"
+   ],
+   "handles": [],
+   "press": []
+  },
+  {
+   "name": "Saya Café",
+   "area": "jumeirah",
+   "aliases": [
+    "Saya Brasserie",
+    "Saya Café"
+   ],
+   "handles": [],
+   "press": []
+  },
+  {
+   "name": "Boon Coffee",
+   "area": "downtown",
+   "aliases": [
+    "Boon Coffee"
+   ],
+   "handles": [],
+   "press": []
+  },
+  {
+   "name": "% Arabica",
+   "area": "downtown",
+   "aliases": [
+    "% Arabica"
+   ],
+   "handles": [],
+   "press": []
+  }
+ ]
+}

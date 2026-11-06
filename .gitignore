@@ -1,0 +1,9 @@
+# Collected third-party content stays on this machine
+data/raw/
+data/places.json
+data/places_check.json
+probe.sh
+scripts/probe_slugs.py
+__pycache__/
+.DS_Store
+.env
