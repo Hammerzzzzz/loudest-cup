@@ -1,14 +1,14 @@
 {
- "generated": "6 November 2026",
+ "generated": "16 November 2026",
  "totals": {
-  "posts": 1824,
-  "window": 1153,
-  "matched": 131,
+  "posts": 2309,
+  "window": 1459,
+  "matched": 144,
   "cafes": 107,
-  "creators": 754,
+  "creators": 937,
   "tags": 58,
   "guides": 59,
-  "articles": 189
+  "articles": 188
  },
  "areas": [
   {
@@ -80,16 +80,16 @@
     "guide": 1
    },
    "move": {
-    "d365": 4,
-    "d90": 8,
-    "guidesTab": null
+    "d365": -3,
+    "d90": 0,
+    "guidesTab": 0
    },
    "url": "https://www.instagram.com/triocoffee.ae/",
    "d365": {
-    "score": 53.0
+    "score": 50.7
    },
    "d90": {
-    "score": 87.6
+    "score": 87.8
    },
    "guidesTab": {
     "score": 7.6
@@ -119,19 +119,19 @@
     "news": 1
    },
    "move": {
-    "d365": -1,
-    "d90": "new",
-    "guidesTab": null
+    "d365": 2,
+    "d90": 0,
+    "guidesTab": 1
    },
    "url": "https://www.instagram.com/subkouae/",
    "d365": {
-    "score": 53.1
+    "score": 55.4
    },
    "d90": {
     "score": 49.4
    },
    "guidesTab": {
-    "score": 10.5
+    "score": 10.7
    },
    "reviewsTab": null
   },
@@ -200,20 +200,20 @@
     "guide": 1
    },
    "move": {
-    "d365": 0,
+    "d365": -1,
     "d90": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.instagram.com/foreverrosecafe/",
    "d365": {
-    "score": 74.0
+    "score": 75.2
    },
    "d90": {
     "score": 50.0
    },
    "guidesTab": {
-    "score": 51.3
+    "score": 51.4
    },
    "reviewsTab": {
     "score": 80.5
@@ -230,12 +230,12 @@
    "sources": [],
    "kinds": {},
    "move": {
-    "d365": "new",
-    "d90": "new"
+    "d365": -6,
+    "d90": 0
    },
    "url": "https://www.instagram.com/casatasa.ae/",
    "d365": {
-    "score": 36.1
+    "score": 34.5
    },
    "d90": {
     "score": 99.7
@@ -291,19 +291,19 @@
     "news": 2
    },
    "move": {
-    "d365": 0,
-    "d90": "new",
-    "guidesTab": null
+    "d365": -13,
+    "d90": 0,
+    "guidesTab": 0
    },
    "url": "https://www.instagram.com/julith.coffee/",
    "d365": {
-    "score": 65.0
+    "score": 55.6
    },
    "d90": {
     "score": 49.6
    },
    "guidesTab": {
-    "score": 40.3
+    "score": 40.2
    },
    "reviewsTab": null
   },
@@ -315,10 +315,10 @@
    ],
    "maps": "https://www.google.com/maps/search/?api=1&query=Mazmi%20Cafe%20Dubai&query_place_id=ChIJWd3Ul0BDXz4R7vJsr_tevo8",
    "reviews": {
-    "count": 988,
-    "rating": 4.5,
-    "google": 4.5,
-    "googleCount": 898,
+    "count": 991,
+    "rating": 4.4,
+    "google": 4.4,
+    "googleCount": 901,
     "tripadvisor": 4.5,
     "tripadvisorCount": 90
    },
@@ -364,13 +364,13 @@
     "guide": 2
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.instagram.com/mazmicafe/",
    "d365": {
-    "score": 71.7
+    "score": 69.9
    },
    "d90": {
     "score": 0
@@ -379,7 +379,7 @@
     "score": 44.3
    },
    "reviewsTab": {
-    "score": 73.2
+    "score": 70.2
    }
   },
   {
@@ -405,13 +405,13 @@
     "guide": 1
    },
    "move": {
-    "d365": -7,
-    "d90": -2,
-    "guidesTab": null
+    "d365": -5,
+    "d90": 0,
+    "guidesTab": 0
    },
    "url": "https://www.instagram.com/wave.ad/",
    "d365": {
-    "score": 46.7
+    "score": 45.4
    },
    "d90": {
     "score": 72.3
@@ -452,17 +452,16 @@
     "news": 1
    },
    "move": {
-    "d365": -2,
-    "d90": -2,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.instagram.com/knotbakehouse/",
    "d365": {
-    "score": 57.2
+    "score": 56.3
    },
    "d90": {
-    "score": 49.3
+    "score": 0
    },
    "guidesTab": {
     "score": 10.3
@@ -482,11 +481,11 @@
    "sources": [],
    "kinds": {},
    "move": {
-    "d365": -4
+    "d365": -5
    },
    "url": "https://www.instagram.com/offthestreetdxb/",
    "d365": {
-    "score": 32.6
+    "score": 31.3
    },
    "d90": {
     "score": 0
@@ -505,14 +504,15 @@
    "sources": [],
    "kinds": {},
    "move": {
-    "d365": -4
+    "d365": 4,
+    "d90": "new"
    },
    "url": "https://www.instagram.com/lunedubai/",
    "d365": {
-    "score": 38.1
+    "score": 36.5
    },
    "d90": {
-    "score": 0
+    "score": 50.7
    },
    "guidesTab": null,
    "reviewsTab": null
@@ -548,20 +548,20 @@
     "news": 1
    },
    "move": {
-    "d365": -3,
-    "d90": "new",
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -4,
+    "d90": 1,
+    "guidesTab": -1,
+    "reviewsTab": 0
    },
    "url": "https://www.instagram.com/hampsteadbakeryandcafe/",
    "d365": {
-    "score": 56.5
+    "score": 53.4
    },
    "d90": {
-    "score": 48.4
+    "score": 49.3
    },
    "guidesTab": {
-    "score": 10.5
+    "score": 10.4
    },
    "reviewsTab": {
     "score": 66.0
@@ -590,16 +590,15 @@
     "news": 1
    },
    "move": {
-    "d365": -4,
-    "d90": 0,
-    "guidesTab": null
+    "d365": -5,
+    "guidesTab": 0
    },
    "url": "https://www.instagram.com/bishettebakery/",
    "d365": {
-    "score": 46.5
+    "score": 45.2
    },
    "d90": {
-    "score": 51.3
+    "score": 0
    },
    "guidesTab": {
     "score": 10.3
@@ -629,18 +628,18 @@
     "news": 1
    },
    "move": {
-    "d365": -7,
-    "guidesTab": null
+    "d365": -20,
+    "guidesTab": -2
    },
    "url": "https://www.instagram.com/caju_coffee_house/",
    "d365": {
-    "score": 42.9
+    "score": 36.3
    },
    "d90": {
     "score": 0
    },
    "guidesTab": {
-    "score": 10.2
+    "score": 10.1
    },
    "reviewsTab": null
   },
@@ -676,12 +675,12 @@
     "guide": 1
    },
    "move": {
-    "d365": -5,
-    "guidesTab": null
+    "d365": -6,
+    "guidesTab": -1
    },
    "url": "https://www.instagram.com/saddledubai/",
    "d365": {
-    "score": 49.8
+    "score": 48.8
    },
    "d90": {
     "score": 0
@@ -702,12 +701,12 @@
    "sources": [],
    "kinds": {},
    "move": {
-    "d365": 2,
-    "d90": -11
+    "d365": -2,
+    "d90": 1
    },
    "url": "https://www.instagram.com/ona.dubai/",
    "d365": {
-    "score": 27.3
+    "score": 26.3
    },
    "d90": {
     "score": 45.7
@@ -726,12 +725,12 @@
    "sources": [],
    "kinds": {},
    "move": {
-    "d365": -4,
-    "d90": -12
+    "d365": -3,
+    "d90": 1
    },
    "url": "https://www.instagram.com/slacafe/",
    "d365": {
-    "score": 37.9
+    "score": 36.4
    },
    "d90": {
     "score": 30.1
@@ -762,12 +761,12 @@
     "guide": 1
    },
    "move": {
-    "d365": -5,
-    "guidesTab": null
+    "d365": -7,
+    "guidesTab": 0
    },
    "url": "https://www.instagram.com/blume_dubai/",
    "d365": {
-    "score": 45.0
+    "score": 43.9
    },
    "d90": {
     "score": 0
@@ -871,12 +870,12 @@
    "move": {
     "d365": 0,
     "d90": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.instagram.com/rawcoffeecompany/",
    "d365": {
-    "score": 77.9
+    "score": 77.2
    },
    "d90": {
     "score": 54.1
@@ -912,11 +911,11 @@
    },
    "move": {
     "d365": -4,
-    "guidesTab": null
+    "guidesTab": 1
    },
    "url": "https://www.instagram.com/enjoynala/",
    "d365": {
-    "score": 40.1
+    "score": 39.1
    },
    "d90": {
     "score": 0
@@ -949,16 +948,16 @@
     "news": 1
    },
    "move": {
-    "d365": 15,
-    "d90": "new",
-    "guidesTab": null
+    "d365": -7,
+    "d90": 1,
+    "guidesTab": 1
    },
    "url": "https://www.instagram.com/oath.ae/",
    "d365": {
-    "score": 42.4
+    "score": 41.4
    },
    "d90": {
-    "score": 47.7
+    "score": 48.0
    },
    "guidesTab": {
     "score": 10.2
@@ -971,10 +970,10 @@
    "handles": [],
    "maps": "https://www.google.com/maps/search/?api=1&query=Seva%20Dubai&query_place_id=ChIJ46uYUABDXz4Rj77hZEXekIc",
    "reviews": {
-    "count": 73,
+    "count": 74,
     "rating": 4.4,
     "google": 4.4,
-    "googleCount": 73,
+    "googleCount": 74,
     "tripadvisor": null,
     "tripadvisorCount": 0
    },
@@ -1011,18 +1010,18 @@
     "news": 4
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null
+    "d365": 44,
+    "guidesTab": 3
    },
    "url": "https://www.google.com/maps/search/Seva+Dubai",
    "d365": {
-    "score": 37.4
+    "score": 49.6
    },
    "d90": {
     "score": 0
    },
    "guidesTab": {
-    "score": 31.0
+    "score": 31.1
    },
    "reviewsTab": null
   },
@@ -1121,19 +1120,19 @@
     "guide": 3
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 10,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Nightjar+Dubai",
    "d365": {
-    "score": 60.1
+    "score": 75.4
    },
    "d90": {
     "score": 0
    },
    "guidesTab": {
-    "score": 130.0
+    "score": 130.1
    },
    "reviewsTab": {
     "score": 66.9
@@ -1234,9 +1233,9 @@
     "guide": 4
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/The+Espresso+Lab+Dubai",
    "d365": {
@@ -1347,8 +1346,8 @@
    },
    "move": {
     "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Tom+&+Serg+Dubai",
    "d365": {
@@ -1452,9 +1451,9 @@
     "guide": 3
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Cassette+Dubai",
    "d365": {
@@ -1541,13 +1540,13 @@
     "guide": 2
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Amongst+Few+Dubai",
    "d365": {
-    "score": 64.4
+    "score": 64.0
    },
    "d90": {
     "score": 0
@@ -1647,13 +1646,13 @@
     "guide": 2
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Arabian+Tea+House+Dubai",
    "d365": {
-    "score": 72.9
+    "score": 72.5
    },
    "d90": {
     "score": 0
@@ -1753,8 +1752,8 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Lulu+and+the+Beanstalk+Dubai",
    "d365": {
@@ -1863,9 +1862,9 @@
     "guide": 2
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/The+Grey+Dubai",
    "d365": {
@@ -1885,17 +1884,8 @@
    "name": "Nette",
    "area": "alquoz",
    "handles": [],
-   "maps": "https://www.google.com/maps/search/?api=1&query=Nette%20Dubai&query_place_id=ChIJhYSZq4NpXz4Rwh4RHFwcZAk",
-   "reviews": {
-    "count": 540,
-    "rating": 4.4,
-    "google": 4.4,
-    "googleCount": 540,
-    "tripadvisor": null,
-    "tripadvisorCount": 0
-   },
+   "maps": "https://www.google.com/maps/search/?api=1&query=Nette%20Dubai",
    "guides": [
-    "FACT",
     "Platinumlist",
     "The Huntr",
     "Time Out Dubai",
@@ -1929,37 +1919,26 @@
      "title": "The Huntr, 2025 openings so far",
      "url": "https://thehuntr.com/guide/dubais-best-new-openings-of-2025-so-far-cafes-specialty-coffee-specialty-tea-and-matcha-places",
      "date": "2025"
-    },
-    {
-     "name": "FACT",
-     "kind": "news",
-     "title": "FACT",
-     "url": "https://www.factmagazines.com/uae/dubai/food-dubai/the-best-breakfasts-in-dubai-for-croissants-crepes-and-coffee/",
-     "date": ""
     }
    ],
    "kinds": {
-    "news": 1,
     "guide": 4
    },
    "move": {
     "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0
    },
    "url": "https://www.google.com/maps/search/Nette+Dubai",
    "d365": {
-    "score": 45.5
+    "score": 33.5
    },
    "d90": {
     "score": 0
    },
    "guidesTab": {
-    "score": 44.0
+    "score": 37.0
    },
-   "reviewsTab": {
-    "score": 66.4
-   }
+   "reviewsTab": null
   },
   {
    "name": "Kulture House",
@@ -2024,9 +2003,9 @@
     "guide": 1
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Kulture+House+Dubai",
    "d365": {
@@ -2121,9 +2100,9 @@
     "guide": 1
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Boston+Lane+Dubai",
    "d365": {
@@ -2211,8 +2190,8 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Common+Grounds+Dubai",
    "d365": {
@@ -2298,14 +2277,14 @@
     "guide": 1
    },
    "move": {
-    "d365": 12,
-    "d90": "new",
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "d90": 1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/RX+Coffee+Apothecary+Dubai",
    "d365": {
-    "score": 63.0
+    "score": 62.5
    },
    "d90": {
     "score": 45.6
@@ -2347,8 +2326,8 @@
     "news": 1
    },
    "move": {
-    "d365": -2,
-    "guidesTab": null
+    "d365": 0,
+    "guidesTab": 0
    },
    "url": "https://www.google.com/maps/search/Of+the+Earth+Dubai",
    "d365": {
@@ -2433,9 +2412,9 @@
     "guide": 1
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/One+Life+Dubai",
    "d365": {
@@ -2484,12 +2463,12 @@
    },
    "move": {
     "d365": -3,
-    "d90": -6,
-    "guidesTab": null
+    "d90": 1,
+    "guidesTab": 0
    },
    "url": "https://www.instagram.com/themeldconcept/",
    "d365": {
-    "score": 34.0
+    "score": 33.3
    },
    "d90": {
     "score": 30.1
@@ -2569,9 +2548,9 @@
     "guide": 1
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Mokha+1450+Dubai",
    "d365": {
@@ -2658,9 +2637,9 @@
     "guide": 1
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Splendour+Fields+Dubai",
    "d365": {
@@ -2764,13 +2743,13 @@
     "guide": 1
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Brunch+and+Cake+Dubai",
    "d365": {
-    "score": 77.0
+    "score": 76.2
    },
    "d90": {
     "score": 0
@@ -2873,20 +2852,20 @@
     "guide": 2
    },
    "move": {
-    "d365": 0,
-    "d90": -2,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 1,
+    "d90": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.instagram.com/lanenacoffee/",
    "d365": {
-    "score": 74.3
+    "score": 76.4
    },
    "d90": {
     "score": 77.8
    },
    "guidesTab": {
-    "score": 82.3
+    "score": 82.4
    },
    "reviewsTab": {
     "score": 58.9
@@ -2984,9 +2963,9 @@
     "guide": 3
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/The+Sum+Of+Us+Dubai",
    "d365": {
@@ -3080,9 +3059,9 @@
     "guide": 2
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Nomad+Day+Bar+Dubai",
    "d365": {
@@ -3128,18 +3107,18 @@
     "news": 1
    },
    "move": {
-    "d365": -4,
-    "guidesTab": null
+    "d365": 27,
+    "guidesTab": 1
    },
    "url": "https://www.google.com/maps/search/Lazy+Cat+Dubai",
    "d365": {
-    "score": 41.1
+    "score": 47.4
    },
    "d90": {
     "score": 0
    },
    "guidesTab": {
-    "score": 20.1
+    "score": 20.2
    },
    "reviewsTab": null
   },
@@ -3181,8 +3160,8 @@
     "guide": 2
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null
+    "d365": -2,
+    "guidesTab": 0
    },
    "url": "https://www.google.com/maps/search/21grams+Dubai",
    "d365": {
@@ -3283,9 +3262,9 @@
     "guide": 2
    },
    "move": {
-    "d365": -2,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Stomping+Grounds+Dubai",
    "d365": {
@@ -3340,8 +3319,8 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Cypher+Urban+Roastery+Dubai",
    "d365": {
@@ -3411,19 +3390,19 @@
     "guide": 1
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 21,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/BRIX+Café+Dubai",
    "d365": {
-    "score": 48.3
+    "score": 60.5
    },
    "d90": {
     "score": 0
    },
    "guidesTab": {
-    "score": 37.0
+    "score": 37.1
    },
    "reviewsTab": {
     "score": 82.6
@@ -3482,17 +3461,17 @@
     "news": 4
    },
    "move": {
-    "d365": 32,
-    "d90": "new",
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "d90": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Saya+Café+Dubai",
    "d365": {
-    "score": 59.5
+    "score": 59.2
    },
    "d90": {
-    "score": 54.7
+    "score": 55.2
    },
    "guidesTab": {
     "score": 31.1
@@ -3563,13 +3542,13 @@
     "news": 4
    },
    "move": {
-    "d365": -4,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 8,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/Boon+Coffee+Dubai",
    "d365": {
-    "score": 48.8
+    "score": 52.6
    },
    "d90": {
     "score": 0
@@ -3644,8 +3623,8 @@
    },
    "move": {
     "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "url": "https://www.google.com/maps/search/%+Arabica+Dubai",
    "d365": {
@@ -3717,8 +3696,8 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 41.9
@@ -3795,9 +3774,9 @@
     "news": 5
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 43.7
@@ -3867,9 +3846,9 @@
     "news": 5
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 45.0
@@ -3916,8 +3895,8 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 35.9
@@ -3972,9 +3951,9 @@
     "news": 4
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 44.7
@@ -4068,9 +4047,9 @@
     "news": 8
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 49.0
@@ -4117,9 +4096,9 @@
     "news": 3
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -3,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 43.2
@@ -4189,9 +4168,9 @@
     "news": 5
    },
    "move": {
-    "d365": -2,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 42.2
@@ -4271,8 +4250,8 @@
    },
    "move": {
     "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 46.1
@@ -4341,9 +4320,9 @@
     "news": 4
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": -1,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 45.2
@@ -4412,9 +4391,9 @@
     "news": 4
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 41.5
@@ -4468,9 +4447,9 @@
     "news": 3
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 39.2
@@ -4532,9 +4511,9 @@
     "news": 4
    },
    "move": {
-    "d365": -42,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 42.8
@@ -4628,8 +4607,8 @@
     "news": 8
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null
+    "d365": -2,
+    "guidesTab": 0
    },
    "d365": {
     "score": 42.6
@@ -4696,9 +4675,9 @@
     "news": 4
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": -1,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 48.3
@@ -4767,9 +4746,9 @@
     "news": 4
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 39.5
@@ -4791,10 +4770,10 @@
    "url": "https://www.thecoffeelab.ae/",
    "maps": "https://www.google.com/maps/search/?api=1&query=The%20Coffee%20Lab%20Dubai&query_place_id=ChIJDVOUxQxDXz4RbzzPZ9hhH7Y",
    "reviews": {
-    "count": 4371,
+    "count": 4404,
     "rating": 4.7,
     "google": 4.7,
-    "googleCount": 4371,
+    "googleCount": 4404,
     "tripadvisor": null,
     "tripadvisorCount": 0
    },
@@ -4802,8 +4781,8 @@
    "sources": [],
    "kinds": {},
    "move": {
-    "d365": -2,
-    "reviewsTab": null
+    "d365": 1,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 26.7
@@ -4813,7 +4792,7 @@
    },
    "guidesTab": null,
    "reviewsTab": {
-    "score": 88.9
+    "score": 89.0
    }
   },
   {
@@ -4834,8 +4813,8 @@
    "sources": [],
    "kinds": {},
    "move": {
-    "d365": -1,
-    "reviewsTab": null
+    "d365": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 20.4
@@ -4866,7 +4845,7 @@
    "sources": [],
    "kinds": {},
    "move": {
-    "d365": -1
+    "d365": 0
    },
    "d365": {
     "score": 16.6
@@ -4907,18 +4886,18 @@
     "news": 1
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 39,
+    "guidesTab": 3,
+    "reviewsTab": 0
    },
    "d365": {
-    "score": 28.0
+    "score": 43.3
    },
    "d90": {
     "score": 0
    },
    "guidesTab": {
-    "score": 7.0
+    "score": 7.1
    },
    "reviewsTab": {
     "score": 66.4
@@ -4954,9 +4933,9 @@
     "news": 1
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 27.5
@@ -5009,9 +4988,9 @@
     "news": 2
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 34.5
@@ -5033,10 +5012,10 @@
    "url": "https://www.villa515.com/",
    "maps": "https://www.google.com/maps/search/?api=1&query=Cafe%20Villa%20515%20Dubai&query_place_id=ChIJ_S1uMxZCXz4RlabwzkFY9zg",
    "reviews": {
-    "count": 2394,
+    "count": 2388,
     "rating": 4.3,
     "google": 4.3,
-    "googleCount": 2394,
+    "googleCount": 2388,
     "tripadvisor": null,
     "tripadvisorCount": 0
    },
@@ -5057,9 +5036,9 @@
     "news": 2
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 35.0
@@ -5081,10 +5060,10 @@
    "url": "https://www.joescafedubai.com/",
    "maps": "https://www.google.com/maps/search/?api=1&query=Joe%27s%20Caf%C3%A9%20Dubai&query_place_id=ChIJAQAAMChoXz4RuJzcBOap9Mk",
    "reviews": {
-    "count": 26098,
+    "count": 26118,
     "rating": 4.9,
     "google": 4.9,
-    "googleCount": 25564,
+    "googleCount": 25584,
     "tripadvisor": 4.0,
     "tripadvisorCount": 534
    },
@@ -5112,9 +5091,9 @@
     "news": 2
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 44.0
@@ -5136,10 +5115,10 @@
    "url": "https://letocaffe.com/",
    "maps": "https://www.google.com/maps/search/?api=1&query=L%27ETO%20Dubai&query_place_id=ChIJtXPneY9pXz4RUBPUXPdaOiA",
    "reviews": {
-    "count": 8368,
-    "rating": 4.7,
-    "google": 4.7,
-    "googleCount": 8368,
+    "count": 8392,
+    "rating": 4.8,
+    "google": 4.8,
+    "googleCount": 8392,
     "tripadvisor": null,
     "tripadvisorCount": 0
    },
@@ -5160,11 +5139,11 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
-    "score": 37.5
+    "score": 38.4
    },
    "d90": {
     "score": 0
@@ -5173,7 +5152,7 @@
     "score": 10.0
    },
    "reviewsTab": {
-    "score": 89.8
+    "score": 93.1
    }
   },
   {
@@ -5183,10 +5162,10 @@
    "url": "https://wildandthemoon.ae/",
    "maps": "https://www.google.com/maps/search/?api=1&query=Wild%20%26%20The%20Moon%20Dubai&query_place_id=ChIJW0qpfUdpXz4REnjKqu4hv-E",
    "reviews": {
-    "count": 409,
-    "rating": 4.5,
-    "google": 4.5,
-    "googleCount": 409,
+    "count": 390,
+    "rating": 4.6,
+    "google": 4.6,
+    "googleCount": 390,
     "tripadvisor": null,
     "tripadvisorCount": 0
    },
@@ -5214,12 +5193,12 @@
     "news": 2
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
-    "score": 33.5
+    "score": 34.2
    },
    "d90": {
     "score": 0
@@ -5228,7 +5207,7 @@
     "score": 14.0
    },
    "reviewsTab": {
-    "score": 67.3
+    "score": 69.7
    }
   },
   {
@@ -5238,10 +5217,10 @@
    "url": "https://eatx.com/harvest-co/",
    "maps": "https://www.google.com/maps/search/?api=1&query=Harvest%20%26%20Co%20Dubai&query_place_id=ChIJiwLd0lxrXz4RrByC2zfzx3I",
    "reviews": {
-    "count": 9924,
+    "count": 10021,
     "rating": 4.9,
     "google": 4.9,
-    "googleCount": 9924,
+    "googleCount": 10021,
     "tripadvisor": null,
     "tripadvisorCount": 0
    },
@@ -5269,9 +5248,9 @@
     "news": 2
    },
    "move": {
-    "d365": -2,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 42.2
@@ -5293,10 +5272,10 @@
    "url": "https://www.secretgardenivy.com/",
    "maps": "https://www.google.com/maps/search/?api=1&query=Ivy%27s%20secret%20garden%20Dubai&query_place_id=ChIJDYmNUX9pXz4Rw-p3iZAsIks",
    "reviews": {
-    "count": 622,
+    "count": 880,
     "rating": 4.8,
     "google": 4.8,
-    "googleCount": 622,
+    "googleCount": 880,
     "tripadvisor": null,
     "tripadvisorCount": 0
    },
@@ -5316,12 +5295,12 @@
     "news": 1
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
-    "score": 34.1
+    "score": 34.9
    },
    "d90": {
     "score": 0
@@ -5330,7 +5309,7 @@
     "score": 10.0
    },
    "reviewsTab": {
-    "score": 78.8
+    "score": 81.4
    }
   },
   {
@@ -5340,10 +5319,10 @@
    "url": "https://apricotdubai.com/",
    "maps": "https://www.google.com/maps/search/?api=1&query=Apricot%20Dubai&query_place_id=ChIJgR5Dmw5pXz4RtC16DhAPkHk",
    "reviews": {
-    "count": 727,
+    "count": 738,
     "rating": 4.4,
     "google": 4.4,
-    "googleCount": 727,
+    "googleCount": 738,
     "tripadvisor": null,
     "tripadvisorCount": 0
    },
@@ -5363,12 +5342,12 @@
     "news": 1
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": -1,
+    "reviewsTab": 0
    },
    "d365": {
-    "score": 28.5
+    "score": 28.6
    },
    "d90": {
     "score": 0
@@ -5377,7 +5356,7 @@
     "score": 7.0
    },
    "reviewsTab": {
-    "score": 68.3
+    "score": 68.4
    }
   },
   {
@@ -5426,9 +5405,9 @@
     "news": 3
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 43.5
@@ -5497,9 +5476,9 @@
     "news": 4
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 47.2
@@ -5568,9 +5547,9 @@
     "news": 4
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 44.4
@@ -5631,9 +5610,9 @@
     "news": 3
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 44.1
@@ -5702,9 +5681,9 @@
     "news": 4
    },
    "move": {
-    "d365": -2,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 42.3
@@ -5765,9 +5744,9 @@
     "news": 3
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 37.1
@@ -5821,8 +5800,8 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 32.5
@@ -5883,9 +5862,9 @@
     "news": 3
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 43.5
@@ -5946,9 +5925,9 @@
     "news": 3
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 39.3
@@ -5994,8 +5973,8 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": -1,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 27.6
@@ -6072,9 +6051,9 @@
     "news": 5
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 48.7
@@ -6178,8 +6157,8 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 55.0
@@ -6273,9 +6252,9 @@
     "news": 8
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 59.9
@@ -6376,9 +6355,9 @@
     "news": 8
    },
    "move": {
-    "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 49.4
@@ -6447,9 +6426,9 @@
     "news": 4
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": 0,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 46.4
@@ -6494,9 +6473,9 @@
     "news": 1
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 29.6
@@ -6549,13 +6528,13 @@
     "news": 2
    },
    "move": {
-    "d365": 44,
-    "d90": "new",
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "d90": 1,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
-    "score": 52.8
+    "score": 52.3
    },
    "d90": {
     "score": 46.6
@@ -6585,8 +6564,8 @@
    "sources": [],
    "kinds": {},
    "move": {
-    "d365": -1,
-    "reviewsTab": null
+    "d365": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 21.5
@@ -6653,9 +6632,9 @@
     "news": 4
    },
    "move": {
-    "d365": 1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -3,
+    "guidesTab": -1,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 43.1
@@ -6688,11 +6667,11 @@
    "sources": [],
    "kinds": {},
    "move": {
-    "d365": -3,
-    "reviewsTab": null
+    "d365": 12,
+    "reviewsTab": 0
    },
    "d365": {
-    "score": 26.9
+    "score": 33.0
    },
    "d90": {
     "score": 0
@@ -6741,8 +6720,8 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 32.0
@@ -6796,8 +6775,8 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 41.0
@@ -6830,8 +6809,8 @@
    "sources": [],
    "kinds": {},
    "move": {
-    "d365": -1,
-    "reviewsTab": null
+    "d365": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 20.5
@@ -6875,8 +6854,8 @@
    },
    "move": {
     "d365": 0,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 33.3
@@ -6921,9 +6900,9 @@
     "news": 1
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 29.7
@@ -6968,9 +6947,9 @@
     "news": 1
    },
    "move": {
-    "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "d365": -2,
+    "guidesTab": 0,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 30.7
@@ -7016,8 +6995,8 @@
    },
    "move": {
     "d365": -1,
-    "guidesTab": null,
-    "reviewsTab": null
+    "guidesTab": -1,
+    "reviewsTab": 0
    },
    "d365": {
     "score": 32.3
@@ -7033,50 +7012,70 @@
    }
   }
  ],
- "moveNote": "Estimated: compared with 30 days ago, from post dates",
+ "moveNote": "Compared with 9 November 2026",
  "tags": [
   [
    "dubaifood",
-   101
-  ],
-  [
-   "dubaicafe",
-   96
+   137
   ],
   [
    "dubaifoodie",
-   87
+   108
+  ],
+  [
+   "dubaicafe",
+   106
   ],
   [
    "dubaieats",
-   76
-  ],
-  [
-   "dubaicoffee",
-   63
+   103
   ],
   [
    "dubaifoodies",
-   61
+   95
+  ],
+  [
+   "dubaicoffee",
+   70
   ],
   [
    "dubairestaurants",
-   47
-  ],
-  [
-   "cafe",
-   47
-  ],
-  [
-   "dubaicafes",
-   46
+   67
   ],
   [
    "downtowndubai",
-   46
+   64
+  ],
+  [
+   "dubaicafes",
+   53
+  ],
+  [
+   "palmjumeirah",
+   50
+  ],
+  [
+   "cafe",
+   45
   ],
   [
    "burjkhalifa",
+   43
+  ],
+  [
+   "businessbay",
+   41
+  ],
+  [
+   "dubaimarina",
+   40
+  ],
+  [
+   "mydubai",
+   37
+  ],
+  [
+   "newindubai",
    37
   ],
   [
@@ -7084,52 +7083,32 @@
    35
   ],
   [
-   "mydubai",
-   31
-  ],
-  [
    "dubaireels",
-   30
-  ],
-  [
-   "dubaimarina",
-   28
+   34
   ],
   [
    "dubailifestyle",
-   27
-  ],
-  [
-   "matcha",
-   27
-  ],
-  [
-   "palmjumeirah",
-   26
-  ],
-  [
-   "businessbay",
-   25
+   29
   ],
   [
    "dubairestaurant",
-   20
+   26
   ],
   [
-   "دبي",
-   17
+   "dubaicreekharbour",
+   25
+  ],
+  [
+   "matcha",
+   24
   ],
   [
    "jumeirah",
-   17
+   24
   ],
   [
-   "travel",
-   17
-  ],
-  [
-   "dubainight",
-   17
+   "jbr",
+   23
   ]
  ],
  "tabLabels": {
@@ -7144,7 +7123,7 @@
   "guidesTab": "Ranked by independent recommendations, with newer articles counting for more",
   "reviewsTab": "Google and Tripadvisor combined, minimum 100 reviews"
  },
- "tagNote": "The most-used tags across 1,153 Dubai posts from the past 12 months, with how many posts used each.",
+ "tagNote": "The most-used tags across 1,459 Dubai posts from the past 12 months, with how many posts used each.",
  "method": [
   {
    "weight": "40%",
@@ -7172,7 +7151,7 @@
    "text": "How many places a cafe has risen or fallen since the last update."
   }
  ],
- "limits": "<strong>How far to trust this.</strong> It combines 88 cafes' Google and Tripadvisor ratings, 189 articles from 59 publishers and 1,153 public Instagram posts. Ratings come from Wanderlog's copies and may be months old. 19 newer cafes have no review data yet and are scored on their other signals. Older cafes have had longer to collect reviews and mentions, so the Trending tab is the better guide to what's new. TikTok, Reddit and private community groups aren't included, and shares and saves aren't public.",
+ "limits": "<strong>How far to trust this.</strong> It combines 87 cafes' Google and Tripadvisor ratings, 188 articles from 59 publishers and 1,459 public Instagram posts. Ratings come from Wanderlog's copies and may be months old. 20 newer cafes have no review data yet and are scored on their other signals. Older cafes have had longer to collect reviews and mentions, so the Trending tab is the better guide to what's new. TikTok, Reddit and private community groups aren't included, and shares and saves aren't public.",
  "sourcesHtml": "Guides used: <a href=\"https://www.adameshandbook.com\" target=\"_blank\" rel=\"noopener\">Adam's Handbook</a> · <a href=\"https://www.ahlanlive.com\" target=\"_blank\" rel=\"noopener\">Ahlan</a> · <a href=\"https://albertreview.com.au\" target=\"_blank\" rel=\"noopener\">Albert Review</a> · <a href=\"https://www.arabiers.com\" target=\"_blank\" rel=\"noopener\">Arabiers</a> · <a href=\"https://artandthensome.com\" target=\"_blank\" rel=\"noopener\">Art and Then Some</a> · <a href=\"https://www.bbcgoodfoodme.com\" target=\"_blank\" rel=\"noopener\">BBC Good Food ME</a> · <a href=\"https://benable.com/jojo21/dubai-s-20-best-coffee-shops-from-artisan-roasts-to-unique-cafe-experiences-f7\" target=\"_blank\" rel=\"noopener\">Benable</a> · <a href=\"https://www.bestinhood.com\" target=\"_blank\" rel=\"noopener\">Bestinhood</a> · <a href=\"https://www.cntravellerme.com\" target=\"_blank\" rel=\"noopener\">Condé Nast Traveller ME</a> · <a href=\"https://www.cosmopolitanme.com\" target=\"_blank\" rel=\"noopener\">Cosmopolitan ME</a> · <a href=\"https://curlytales.com\" target=\"_blank\" rel=\"noopener\">Curly Tales</a> · <a href=\"https://dannibindubai.com/?p=2847\" target=\"_blank\" rel=\"noopener\">Danni B in Dubai</a> · <a href=\"https://blog.dubailocal.ae\" target=\"_blank\" rel=\"noopener\">Dubai Local</a> · <a href=\"https://dubaimusts.me\" target=\"_blank\" rel=\"noopener\">Dubai Musts</a> · <a href=\"https://dubai-on.com\" target=\"_blank\" rel=\"noopener\">Dubai On</a> · <a href=\"https://www.dubaisbest.com\" target=\"_blank\" rel=\"noopener\">Dubai's Best</a> · <a href=\"https://dubaiofw.com\" target=\"_blank\" rel=\"noopener\">Dubaiofw</a> · <a href=\"https://eatgosee.com\" target=\"_blank\" rel=\"noopener\">Eatgosee</a> · <a href=\"https://www.factmagazines.com\" target=\"_blank\" rel=\"noopener\">FACT</a> · <a href=\"https://fltrmagazine.com\" target=\"_blank\" rel=\"noopener\">FLTR Magazine</a> · <a href=\"https://www.gqmiddleeast.com\" target=\"_blank\" rel=\"noopener\">GQ Middle East</a> · <a href=\"https://www.gaultmillauae.com\" target=\"_blank\" rel=\"noopener\">Gault&Millau UAE</a> · <a href=\"https://graziamagazine.com\" target=\"_blank\" rel=\"noopener\">Grazia Middle East</a> · <a href=\"https://gulfnews.com\" target=\"_blank\" rel=\"noopener\">Gulf News</a> · <a href=\"https://www.harpersbazaararabia.com\" target=\"_blank\" rel=\"noopener\">Harper's Bazaar Arabia</a> · <a href=\"https://focus.hidubai.com\" target=\"_blank\" rel=\"noopener\">Hi Dubai</a> · <a href=\"https://hungrito.com\" target=\"_blank\" rel=\"noopener\">Hungrito</a> · <a href=\"https://hungryoungwoman.com\" target=\"_blank\" rel=\"noopener\">Hungryoungwoman</a> · <a href=\"https://www.jdeedmagazine.com\" target=\"_blank\" rel=\"noopener\">Jdeed</a> · <a href=\"https://latestnewsdubai.com\" target=\"_blank\" rel=\"noopener\">Latest News Dubai</a> · <a href=\"https://lituae.com\" target=\"_blank\" rel=\"noopener\">Lituae</a> · <a href=\"https://lovin.co/dubai/en/latest/best-matcha-in-dubai/\" target=\"_blank\" rel=\"noopener\">Lovin Dubai</a> · <a href=\"https://mala.ae\" target=\"_blank\" rel=\"noopener\">Mala</a> · <a href=\"https://mariandthecity.com/best-cafes-dubai/\" target=\"_blank\" rel=\"noopener\">Mari and the City</a> · <a href=\"https://menupages.ae\" target=\"_blank\" rel=\"noopener\">Menu Pages</a> · <a href=\"https://nearfarmag.com\" target=\"_blank\" rel=\"noopener\">NearFar Magazine</a> · <a href=\"https://placestovisitsindubai.com\" target=\"_blank\" rel=\"noopener\">Placestovisitsindubai</a> · <a href=\"https://platinumlist.net/guide/best-cafes-and-coffee-shops-in-dubai/\" target=\"_blank\" rel=\"noopener\">Platinumlist</a> · <a href=\"https://roadbook.com/dubai/city-guide/best-coffee-shops-cafes-dubai/\" target=\"_blank\" rel=\"noopener\">Roadbook</a> · <a href=\"https://www.roasters.app\" target=\"_blank\" rel=\"noopener\">Roasters App</a> · <a href=\"https://www.sassymamadubai.com\" target=\"_blank\" rel=\"noopener\">Sassy Mama Dubai</a> · <a href=\"https://www.savoirflair.com\" target=\"_blank\" rel=\"noopener\">Savoir Flair</a> · <a href=\"https://sheerluxe.me\" target=\"_blank\" rel=\"noopener\">Sheerluxe ME</a> · <a href=\"https://thebohochica.com\" target=\"_blank\" rel=\"noopener\">The Boho Chica</a> · <a href=\"https://thegaggler.com\" target=\"_blank\" rel=\"noopener\">The Gaggler</a> · <a href=\"https://thehuntr.com/guide/the-huntrs-picks-the-most-exceptional-openings-of-2025\" target=\"_blank\" rel=\"noopener\">The Huntr</a> · <a href=\"https://www.theluxediary.com\" target=\"_blank\" rel=\"noopener\">The Luxe Diary</a> · <a href=\"https://www.thenationalnews.com\" target=\"_blank\" rel=\"noopener\">The National</a> · <a href=\"https://theneedforcoffee.com\" target=\"_blank\" rel=\"noopener\">The Need for Coffee</a> · <a href=\"https://thewanderingwhites.com\" target=\"_blank\" rel=\"noopener\">Thewanderingwhites</a> · <a href=\"https://www.timeoutdubai.com\" target=\"_blank\" rel=\"noopener\">Time Out Dubai</a> · <a href=\"https://travelsaga.com\" target=\"_blank\" rel=\"noopener\">Travel Saga</a> · <a href=\"https://www.traveltastediscover.com\" target=\"_blank\" rel=\"noopener\">Travel Taste Discover</a> · <a href=\"https://uaestories.com\" target=\"_blank\" rel=\"noopener\">UAE Stories</a> · <a href=\"https://whatson.ae\" target=\"_blank\" rel=\"noopener\">What's On</a> · <a href=\"https://wheresachi.com\" target=\"_blank\" rel=\"noopener\">Where's Achi</a> · <a href=\"https://worldofmouth.app/articles/best-cafes-in-dubai\" target=\"_blank\" rel=\"noopener\">World of Mouth</a> · <a href=\"https://trendsmena.com/?p=269731\" target=\"_blank\" rel=\"noopener\">World's 100 Best Coffee Shops 2026</a> · <a href=\"https://tbreak.com\" target=\"_blank\" rel=\"noopener\">tbreak</a>",
- "footer": "Updated 6 November 2026 from 107 cafes, 189 articles and 1,153 posts. Ratings via Wanderlog, from Google and Tripadvisor."
+ "footer": "Updated 16 November 2026 from 107 cafes, 188 articles and 1,459 posts. Ratings via Wanderlog, from Google and Tripadvisor."
 }

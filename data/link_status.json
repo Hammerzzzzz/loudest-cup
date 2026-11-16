@@ -89,7 +89,7 @@
 },
 "https://bebaxcoffee.com/nusantara": {
 "dead": false,
-"date": ""
+"date": "2023-10"
 },
 "https://blog.dubailocal.ae/places-you-should-visit-in-dubai-for-lipsmacking-pancakes/": {
 "dead": false,
@@ -744,7 +744,7 @@
 "date": "2024-04"
 },
 "https://wowdeals360.com/blog/top-10-best-bakeries-in-dubai/": {
-"dead": false,
+"dead": true,
 "date": ""
 },
 "https://wowdubaitravel.com/best-breakfast-in-dubai-with-view/": {
@@ -1426,5 +1426,9 @@
 "https://www.xvahotel.com/": {
 "dead": false,
 "date": "2020-03"
+},
+"https://www.gokite.travel/outdoor-brunches-in-dubai/": {
+"dead": false,
+"date": ""
 }
 }
