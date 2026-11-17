@@ -4,6 +4,8 @@ Dubai's coffee shops and cafes, ranked by independent recommendations, reviews a
 
 **[Live chart → loudest-cup.onrender.com](https://loudest-cup.onrender.com)** · [![Site health](https://github.com/Hammerzzzzz/loudest-cup/actions/workflows/site-health.yml/badge.svg)](https://github.com/Hammerzzzzz/loudest-cup/actions/workflows/site-health.yml)
 
+![Loudest Cup Dubai home page showing the number one trending cafe](docs/screenshot.jpg)
+
 ## Why I built it
 
 "Best cafés in Dubai" lists are everywhere, and most are paid placements or one writer's taste. I wanted to see what happens when you treat the question the way a social listening team would: gather what lots of independent sources say, weight it, and rank the result.
