@@ -1,0 +1,42 @@
+name: Site health
+
+# Weekly check that the live chart is up and the weekly update has run.
+on:
+  schedule:
+    - cron: "17 6 * * 2"   # Tuesdays 06:17 UTC, the day after the Monday update
+  workflow_dispatch:
+  push:
+    branches: [main]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Data files are valid JSON
+        run: |
+          for f in data/*.json data/history/*.json; do
+            python3 -m json.tool "$f" > /dev/null || { echo "Invalid JSON: $f"; exit 1; }
+          done
+
+      - name: Chart was updated in the last 10 days
+        run: |
+          python3 - <<'PY'
+          import datetime, re, sys
+          html = open("site/index.html", encoding="utf8").read()
+          m = re.search(r"Updated (\d{1,2} \w+ \d{4})", html)
+          if not m:
+              sys.exit("No 'Updated' date found in site/index.html")
+          updated = datetime.datetime.strptime(m.group(1), "%d %B %Y").date()
+          age = (datetime.date.today() - updated).days
+          print(f"Last updated {updated} ({age} days ago)")
+          if age > 10:
+              sys.exit("The weekly update looks overdue")
+          PY
+
+      - name: Live site responds
+        run: |
+          code=$(curl -s -o /dev/null -w "%{http_code}" --retry 3 --retry-delay 20 https://loudest-cup.onrender.com/)
+          echo "HTTP $code"
+          test "$code" = "200"
